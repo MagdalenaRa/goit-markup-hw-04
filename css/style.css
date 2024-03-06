@@ -63,6 +63,7 @@ ul {
   border: none;
   border-radius: 4px;
   margin: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 button:hover {
   background-color: #404bbf;
@@ -101,13 +102,18 @@ a.link:focus {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: left;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a.address-link:hover {
+.address-link:hover {
   color: #404bbf;
 }
 
-a.address-link:focus {
+.address-link:focus {
+  color: #404bbf;
+}
+.address-link:active {
   color: #404bbf;
 }
 
@@ -281,6 +287,11 @@ a.address-list:hover {
   justify-content: center;
 }
 
+.ikon-link:hover,
+.ikon-link:focus {
+  background-color: #404bbf;
+}
+
 .third-section {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -345,6 +356,13 @@ a.address-list:hover {
   justify-content: center;
   margin-bottom: 72px;
 }
+
+.icons-team {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 9px 16px 0px 16px;
+}
 .list-section {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -388,6 +406,7 @@ a.address-list:hover {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .text-footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -401,7 +420,13 @@ a.address-list:hover {
 
 .footer-section {
   background: #2e2f42;
+  height: 312px;
   padding: 100px 0;
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-items {
@@ -433,7 +458,11 @@ a.address-list:hover {
   background-color: #31d0aa;
 }
 
-.worker-list {
+.sv-icon {
+  fill: #f4f4fd;
+}
+
+.sv-footer .worker-list {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
@@ -465,8 +494,12 @@ a.address-list:hover {
 }
 
 .footer-container {
-  display: inline-block;
+  display: flex;
   margin: 0 auto;
+}
+
+.left-footer {
+  margin-right: 120px;
 }
 
 img {
@@ -477,6 +510,8 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
+    0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-wrap {
